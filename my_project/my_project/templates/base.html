@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static  %}
+{% block content %}
+{% placeholder "feature" %}
+{% placeholder "content" %}
+{% placeholder "splashbox" %}
+{% endblock content %}
 <html lang="en">
     <head>
         <meta charset="utf-8" />
