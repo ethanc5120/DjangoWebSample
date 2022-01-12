@@ -175,7 +175,9 @@ INSTALLED_APPS = [
     'djangocms_style',
     'djangocms_googlemap',
     'djangocms_video',
-    'my_project'
+    'my_project',
+
+
 ]
 
 LANGUAGES = (
@@ -206,7 +208,8 @@ CMS_TEMPLATES = (
     ('base.html', 'base'),
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('index.html', 'templates1')
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
