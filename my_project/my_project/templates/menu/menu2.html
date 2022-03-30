@@ -1,6 +1,6 @@
 {% load i18n menu_tags cache %}
 {% for child in children %}
-    <li class="px-5 child{% if child.selected %} selected{% endif %}{% if child.ancestor %} ancestor{% endif %}{% if child.sibling %} sibling{% endif %}{% if child.descendant %} descendant{% endif %}{% if child.children %} dropdown{% endif %}">
+    <li class="px-3 child{% if child.selected %} selected{% endif %}{% if child.ancestor %} ancestor{% endif %}{% if child.sibling %} sibling{% endif %}{% if child.descendant %} descendant{% endif %}{% if child.children %} dropdown{% endif %}">
 
         <a {% if child.children %}class="dropdown-toggle" data-toggle="dropdown"{% endif %} href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">
             <span>{{ child.get_menu_title }}</span>{% if child.children|length %}<span class="caret"></span>{% endif %}
